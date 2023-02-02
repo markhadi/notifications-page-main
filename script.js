@@ -5,6 +5,8 @@ const message = document.querySelectorAll(".message");
 const iconNotif = document.querySelectorAll(".circle-red");
 const notif = document.querySelectorAll(".notif");
 
+console.log(numberNotif);
+
 read.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -16,8 +18,6 @@ read.addEventListener("click", (e) => {
       numberNotif.innerHTML = parseInt(numberNotif.innerHTML) - 1;
     }
   }
-
-  numberNotif.innerHTML = 0;
 });
 
 for (let i = 0; i < notif.length; i++) {
